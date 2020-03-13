@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            >
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtvEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="Edad:"
+                    android:layout_column="1"
+                    />
+
+                <EditText
+                    android:id="@+id/etxtEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:ems="5"
+                    android:hint="37"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/txtvIMCMat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_marginEnd="2dp"
+                    android:text="IMCMat:" />
+
+                <EditText
+                    android:id="@+id/etxtIMCMat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:ems="5"
+                    android:hint="25.24653"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtvTAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="TAS:"
+                    android:layout_column="1"
+                    />
+
+                <EditText
+                    android:id="@+id/etxtTAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:ems="5"
+                    android:hint="170"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:id="@+id/txtvGesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="Gestación:"
+                    android:layout_column="3"
+                    />
+
+                <EditText
+                    android:id="@+id/etxtGesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:ems="5"
+                    android:hint="9"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtvVpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="VPM:"
+                    android:layout_column="1"
+                    />
+
+                <EditText
+                    android:id="@+id/etxtVpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:ems="5"
+                    android:hint="8.19"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:id="@+id/txtvNeutrofilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="Neutrófilo:"
+                    android:layout_column="3"
+                    />
+
+                <EditText
+                    android:id="@+id/etxtNeutrofilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:ems="5"
+                    android:hint="74"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtvEosinofilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:text="Eosinófilo:"
+                    android:layout_column="1"
+                    />
+
+                <EditText
+                    android:id="@+id/etxtEosinofilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:ems="5"
+                    android:hint="0.7"
+                    android:inputType="numberDecimal" />
+
+                <Button
+                    android:id="@+id/btnDiagnostico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Diagnosticar"
+                    android:layout_column="2"
+                    />
+
+
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
